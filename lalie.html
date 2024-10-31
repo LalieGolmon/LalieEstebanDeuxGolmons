@@ -3,29 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Simple</title>
+    <title>Un Message pour Lalie</title>
     <style>
+        /* Style de base pour le corps */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0;
             padding: 20px;
-            background-color: #f3f3f3;
-        }
-        h1 {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
             color: #333;
         }
+
+        /* Style pour le titre */
+        h1 {
+            color: #e07a5f;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style pour les boîtes */
         .box {
-            width: 80%;
+            width: 90%;
             max-width: 600px;
-            padding: 20px;
-            margin: 10px 0;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 15px 0;
+            background-color: #ffffff;
+            border: 2px solid #f2cc8f;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style pour les paragraphes */
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #3d405b;
+            margin: 0 0 10px;
+        }
+
+        /* Style pour le lien */
+        a {
+            color: #81b29a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #f2cc8f;
+        }
+
+        /* Styles spécifiques pour mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .box {
+                padding: 20px;
+            }
+            p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -33,29 +82,19 @@
     <h1>Bonjour Lalie</h1>
 
     <div class="box">
-        <p>Hier soir je t'ai envoyé une image, que j'ai moi meme faites. je pensais que cela te ferais rire et que tu le prendrais bien.
-En effet, cette image faisait reference au fait que tu ne sais plus parler francais depuis cette année, étant de nature taquine, je me suis permis de faire une blague a ce sujet 
-Evidemment, pensant que cela t'amuserais, je n'ai pas pensé au fait que cela puisse etr irrespectueux envers toi, cela n'a jamais été mon but
-Cependant, les actions valent plus que les mots, ainsi au lieu de m'excuser j'ai préféré mettre mon énergie et mon temps ailleurs pour te proposer la chose suivante </p>
+        <p>Hier soir, je t’ai envoyé une image que j’ai moi-même faite. Je pensais que cela te ferait rire et que tu le prendrais bien.</p>
+        <p>En effet, cette image faisait référence au fait que tu ne sais plus parler français depuis cette année. Étant de nature taquine, je me suis permis de faire une blague à ce sujet.</p>
+        <p>Évidemment, pensant que cela t’amuserait, je n’ai pas pensé que cela pourrait être irrespectueux envers toi ; ce n’a jamais été mon intention.</p>
+        <p>Cependant, les actions valent plus que les mots. Ainsi, au lieu de m’excuser, j’ai préféré mettre mon énergie et mon temps ailleurs pour te proposer la chose suivante :</p>
     </div>
 
     <div class="box">
-        <p>
-           Tu retrouveras ci-dessous un lien qui mène a une playlist youtube partagée.
-J'ai pensé que cela serait une bonne idée que nous ayons une playlisy youtube partagée ou nous pourrions tout les deux ajouter nos vidéos favorites afin de les montrer l'un a l'autre 
-Evidemment, j'ai conscience que tu es tres occupé, et que tu n'auras peux etre pas le temps de regarder ces vidéos
-mais j'ai pris du plaisir a te concocter cette playlist, comme tu m'a a l'époque consiller plusieurs livre que j'ai pris du plaisir a lire
-Evidemment, c'est une liste coopérative, et c'est avec plaisir que je regarderais les vidéos que tu mettras dedans si l'envie t'en prends.
-tu retrouveras donc dans cette liste des vidéos d'horreur, de storytelling, de jeux vidéos ( des vidéos que tu pourrais aimer, je te jure ), de philosopgie ou d'autres qui abordent des sujets plus large et actuels,
-J'espere que tu prendras du plaisir 
-
-En esperant ne pas t'avoir trop blessé 
-
-Bisous, et joyeux hallowen
-
-            <a href="https://www.youtube.com/playlist?list=PLDxGzQU8drR3D9kg6d5WKHKxcZjU6ByOy" target="_blank">cliquez ici</a>.
-            Utilisez cette section pour des informations supplémentaires, des explications détaillées, ou tout ce que vous souhaitez partager.
-        </p>
+        <p>Tu trouveras ci-dessous un lien qui mène à une playlist YouTube partagée.</p>
+        <p>J’ai pensé que ce serait une bonne idée que nous ayons une playlist YouTube commune où nous pourrions tous les deux ajouter nos vidéos favorites pour les partager l’un avec l’autre.</p>
+        <p>Évidemment, je sais que tu es très occupé et que tu n’auras peut-être pas le temps de regarder ces vidéos. Cependant, j’ai pris plaisir à te concocter cette playlist, comme lorsque tu m’as conseillé plusieurs livres que j’ai eu plaisir à lire.</p>
+        <p>Dans cette playlist, tu trouveras donc des vidéos d’horreur, de storytelling, de jeux vidéo (des vidéos que tu pourrais apprécier, je te le jure), de philosophie, ou d’autres qui abordent des sujets plus larges et actuels.</p>
+        <p>J’espère que tu y prendras du plaisir.</p>
+        <p>Bisous, et joyeux Halloween ! <a href="https://www.youtube.com/playlist?list=PLDxGzQU8drR3D9kg6d5WKHKxcZjU6ByOy" target="_blank">Clique ici pour accéder à la playlist</a>.</p>
     </div>
 </body>
 </html>
